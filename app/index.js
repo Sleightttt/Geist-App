@@ -1,10 +1,46 @@
-import { View, Text } from "react-native";
+import { View, SafeAreaView, ScrollView } from "react-native";
+import { Stack, useRouter } from "expo-router";
+import ScreenHeaderBtn from "./components/ScreenHeaderBtn/screenheaderbtn";
+import { COLORS, FONT, SIZES, SHADOWS, icons, images } from "./constants";
+import Welcome from "./components/Welcome/welcome";
+import Flipper from "./components/Flipper/flipper";
+import Nav from "./components/Nav/nav";
+import { useState } from "react";
 
 const Home = () => {
+  const router = useRouter();
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
+      <Stack.Screen
+        options={{
+          headerStyle: { backgroundColor: COLORS.primary },
+          headerTintColor: COLORS.secondary,
+          headerShadowVisible: false,
+          headerLeft: () => (
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+          ),
+          headerRight: () => (
+            <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
+          ),
+          headerTitle: "Geist",
+        }}
+      />
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={{ flex: 1, padding: SIZES.medium }}>
+          <Welcome
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            handleClick={() => {
+              router.push(`/search/${searchTerm}`);
+            }}
+          />
+          <Flipper />
+          <Nav />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
