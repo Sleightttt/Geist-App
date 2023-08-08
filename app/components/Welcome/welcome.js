@@ -8,9 +8,7 @@ const Welcome = () => {
       <View style={styles.container}>
         <View>
           <Text style={styles.userName}>Sup, Dawg</Text>
-          <Text style={styles.welcomeMessage}>
-            Here's your future partner(s)(?)
-          </Text>
+          <Text style={styles.welcomeMessage}>Find your Boo</Text>
         </View>
       </View>
     </View>
