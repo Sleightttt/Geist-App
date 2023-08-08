@@ -1,11 +1,20 @@
+// Nav.js
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import styles from "./nav.style";
 
 const Nav = () => {
   return (
-    <View>
-      <Text>Here is the nav</Text>
+    <View style={styles.container}>
+      <TouchableOpacity style={styles.navButton}>
+        <Text style={styles.navButtonText}>Button 1</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.navButton}>
+        <Text style={styles.navButtonText}>Button 2</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.navButton}>
+        <Text style={styles.navButtonText}>Button 3</Text>
+      </TouchableOpacity>
     </View>
   );
 };

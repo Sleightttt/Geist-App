@@ -13,22 +13,22 @@ const Home = () => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
-      <Stack.Screen
-        options={{
-          headerStyle: { backgroundColor: COLORS.primary },
-          headerTintColor: COLORS.secondary,
-          headerShadowVisible: false,
-          headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
-          ),
-          headerRight: () => (
-            <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
-          ),
-          headerTitle: "Geist",
-        }}
-      />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flex: 1, padding: SIZES.medium }}>
+          <Stack.Screen
+            options={{
+              headerStyle: { backgroundColor: COLORS.primary },
+              headerTintColor: COLORS.secondary,
+              headerShadowVisible: false,
+              headerLeft: () => (
+                <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+              ),
+              headerRight: () => (
+                <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
+              ),
+              headerTitle: "Geist",
+            }}
+          />
           <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
@@ -37,9 +37,9 @@ const Home = () => {
             }}
           />
           <Flipper />
-          <Nav />
         </View>
       </ScrollView>
+      <Nav />
     </SafeAreaView>
   );
 };

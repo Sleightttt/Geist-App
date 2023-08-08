@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     marginTop: SIZES.large,
     height: 50,
     shadowColor: "rgba(0, 0, 0, 0.25)", // For iOS
+    backgroundColor: COLORS.white,
     shadowOffset: {
       width: 0,
       height: 4, // Adjust the height based on your preference
