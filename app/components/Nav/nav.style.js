@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: 50,
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.white,
     flexDirection: "row", // Make the buttons appear in a row
     justifyContent: "center", // Center the buttons horizontally
     alignItems: "center", // Center the buttons vertically
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     // marginHorizontal: SIZES.small,
     // paddingVertical: SIZES.small,
     // paddingHorizontal: SIZES.medium,
-    backgroundColor: COLORS.white,
+
     borderLeftWidth: 1,
     borderRightWidth: 1,
     borderColor: COLORS.white,
@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     fontSize: SIZES.small,
   },
   iconImg: {
-    width: 20,
-    height: 20,
+    width: 30,
+    height: 30,
   },
 });
 
