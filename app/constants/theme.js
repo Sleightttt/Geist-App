@@ -11,6 +11,8 @@ const COLORS = {
 
   white: "#F3F4F8",
   lightWhite: "#FAFAFC",
+  gradientStart: "#AED6F1",
+  gradientEnd: "#52528C",
 };
 
 const FONT = {

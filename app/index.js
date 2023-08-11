@@ -6,6 +6,7 @@ import Welcome from "./components/Welcome/welcome";
 import Flipper from "./components/Flipper/flipper";
 import Nav from "./components/Nav/nav";
 import { useState } from "react";
+import LinearGradient from "expo-linear-gradient";
 
 const Home = () => {
   const router = useRouter();
@@ -18,8 +19,10 @@ const Home = () => {
           <Stack.Screen
             options={{
               headerStyle: { backgroundColor: COLORS.primary },
+
               headerTintColor: COLORS.secondary,
               headerShadowVisible: false,
+
               headerLeft: () => (
                 <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
               ),
@@ -29,6 +32,7 @@ const Home = () => {
               headerTitle: "Geist",
             }}
           />
+
           <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
