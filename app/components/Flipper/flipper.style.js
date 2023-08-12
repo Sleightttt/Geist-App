@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
     fontFamily: FONT.bold,
     fontSize: SIZES.xLarge,
     padding: 5,
-    paddingLeft: 15,
   },
   backgroundImage: {
     position: "absolute",
@@ -94,6 +93,18 @@ const styles = StyleSheet.create({
     position: "absolute",
     width: "100%",
     height: "111%",
+  },
+  smallIcon: {
+    width: 20,
+    height: 20,
+    marginTop: 5,
+  },
+  iconInfoContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    paddingLeft: 15,
+    paddingBottom: 5,
   },
 });
 

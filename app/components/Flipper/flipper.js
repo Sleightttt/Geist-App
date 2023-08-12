@@ -32,10 +32,33 @@ const Flipper = () => {
               end={{ x: 0.5, y: 0 }}
               style={styles.gradientBackground}
             />
-            <Text style={styles.cardHeader}>Brennan</Text>
-            <Text style={styles.card}>He/Him</Text>
-            <Text style={styles.card}>Software Engineer</Text>
-            <Text style={styles.card}>App Academy</Text>
+            <View style={styles.iconInfoContainer}>
+              <Text style={styles.cardHeader}>Brennan, 31</Text>
+            </View>
+            <View style={styles.iconInfoContainer}>
+              <Image
+                source={images.profile}
+                resizeMode="cover"
+                style={styles.smallIcon}
+              />
+              <Text style={styles.card}>He/Him</Text>
+            </View>
+            <View style={styles.iconInfoContainer}>
+              <Image
+                source={images.profile}
+                resizeMode="cover"
+                style={styles.smallIcon}
+              />
+              <Text style={styles.card}>Software Engineer</Text>
+            </View>
+            <View style={styles.iconInfoContainer}>
+              <Image
+                source={images.profile}
+                resizeMode="cover"
+                style={styles.smallIcon}
+              />
+              <Text style={styles.card}>App Academy</Text>
+            </View>
             <Text style={styles.cardSpacer}></Text>
           </View>
           <TouchableOpacity style={styles.btn}>
@@ -45,30 +68,33 @@ const Flipper = () => {
             />
           </TouchableOpacity>
         </TouchableOpacity>
-        <View style={styles.container2}>
-          <Text>Hi</Text>
-          <Image
-            source={images.profile2}
-            resizeMode="cover"
-            style={styles.backgroundImage2}
-          />
-        </View>
-        <View style={styles.container2}>
-          <Text>Hi</Text>
-          <Image
-            source={images.profile2}
-            resizeMode="cover"
-            style={styles.backgroundImage2}
-          />
-        </View>
-        <View style={styles.container2}>
-          <Text>Hi</Text>
-          <Image
-            source={images.profile2}
-            resizeMode="cover"
-            style={styles.backgroundImage2}
-          />
-        </View>
+        <TouchableOpacity>
+          <View style={styles.container2}>
+            <Image
+              source={images.kyle}
+              resizeMode="cover"
+              style={styles.backgroundImage2}
+            />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.container2}>
+            <Image
+              source={images.couch}
+              resizeMode="cover"
+              style={styles.backgroundImage2}
+            />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.container2}>
+            <Image
+              source={images.actualcouch}
+              resizeMode="cover"
+              style={styles.backgroundImage2}
+            />
+          </View>
+        </TouchableOpacity>
       </View>
     </PanGestureHandler>
   );
