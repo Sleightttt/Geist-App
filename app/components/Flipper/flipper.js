@@ -7,6 +7,7 @@ import { PanGestureHandler, State } from "react-native-gesture-handler";
 import About from "../About/about";
 
 const Flipper = () => {
+  //attempt 1 at scroll feature
   const onSwipeEvent = (event) => {
     if (event.nativeEvent.state === State.END) {
       // Swipe gesture ended
