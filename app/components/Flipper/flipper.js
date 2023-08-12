@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient"; // Import the LinearGradi
 import { icons, images } from "../../constants";
 import styles from "./flipper.style";
 import { PanGestureHandler, State } from "react-native-gesture-handler";
+import About from "../About/about";
 
 const Flipper = () => {
   const onSwipeEvent = (event) => {
@@ -67,6 +68,7 @@ const Flipper = () => {
             />
           </TouchableOpacity>
         </TouchableOpacity>
+        <About />
 
         <TouchableOpacity>
           <View style={styles.container2}>
@@ -115,6 +117,7 @@ const Flipper = () => {
             </TouchableOpacity>
           </View>
         </TouchableOpacity>
+        <About />
       </View>
     </PanGestureHandler>
   );

@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontFamily: FONT.bold,
     fontSize: SIZES.xLarge,
-    padding: 5,
+    paddingLeft: 0,
   },
   backgroundImage: {
     position: "absolute",
@@ -64,15 +64,15 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 0,
     left: 0,
-    paddingLeft: 15,
+    paddingLeft: 13,
     paddingBottom: 5,
-
     zIndex: 1,
   },
   btnImg: {
-    width: 40,
-    height: 40,
+    width: 50,
+    height: 50,
     marginTop: 5,
+    marginBottom: 5,
   },
   bgFade: {
     width: "100%",
@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
       width: 0,
       height: -4,
     },
+    marginBottom: 3,
     shadowOpacity: 0.5,
     shadowRadius: 20,
     elevation: 10, // For Android
@@ -97,7 +98,6 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
 
-    color: COLORS.white,
     tintColor: COLORS.white,
   },
   iconInfoContainer: {
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   pusher: {
-    paddingLeft: 26,
+    paddingLeft: 25,
     objectFit: "contain",
   },
   pusher2: {
