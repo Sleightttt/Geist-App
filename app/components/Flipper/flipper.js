@@ -25,10 +25,9 @@ const Flipper = () => {
             style={styles.backgroundImage}
           />
           <View style={styles.bgFade}>
-            {/* Use LinearGradient for the gradient background */}
             <LinearGradient
-              colors={["rgba(0, 0, 0, 0.9)", "transparent"]} // Gradient from 20% opacity to none
-              start={{ x: 0.5, y: 1 }} // Start at the middle of the container's top edge
+              colors={["rgba(0, 0, 0, 0.9)", "transparent"]}
+              start={{ x: 0.5, y: 1 }} //
               end={{ x: 0.5, y: 0 }}
               style={styles.gradientBackground}
             />
@@ -37,15 +36,15 @@ const Flipper = () => {
             </View>
             <View style={styles.iconInfoContainer}>
               <Image
-                source={images.profile}
+                source={icons.contract}
                 resizeMode="cover"
-                style={styles.smallIcon}
+                style={[styles.smallIcon, styles.pusher]}
               />
-              <Text style={styles.card}>He/Him</Text>
+              <Text style={[styles.card, styles.pusher2]}>He/Him</Text>
             </View>
             <View style={styles.iconInfoContainer}>
               <Image
-                source={images.profile}
+                source={icons.portfolio}
                 resizeMode="cover"
                 style={styles.smallIcon}
               />
@@ -53,7 +52,7 @@ const Flipper = () => {
             </View>
             <View style={styles.iconInfoContainer}>
               <Image
-                source={images.profile}
+                source={icons.school}
                 resizeMode="cover"
                 style={styles.smallIcon}
               />
@@ -68,6 +67,7 @@ const Flipper = () => {
             />
           </TouchableOpacity>
         </TouchableOpacity>
+
         <TouchableOpacity>
           <View style={styles.container2}>
             <Image
@@ -75,8 +75,15 @@ const Flipper = () => {
               resizeMode="cover"
               style={styles.backgroundImage2}
             />
+            <TouchableOpacity style={styles.btn}>
+              <Image
+                source={icons.heartOutline}
+                style={[styles.btnImg, { tintColor: "#AED6F1" }]}
+              />
+            </TouchableOpacity>
           </View>
         </TouchableOpacity>
+
         <TouchableOpacity>
           <View style={styles.container2}>
             <Image
@@ -84,8 +91,15 @@ const Flipper = () => {
               resizeMode="cover"
               style={styles.backgroundImage2}
             />
+            <TouchableOpacity style={styles.btn}>
+              <Image
+                source={icons.heartOutline}
+                style={[styles.btnImg, { tintColor: "#AED6F1" }]}
+              />
+            </TouchableOpacity>
           </View>
         </TouchableOpacity>
+
         <TouchableOpacity>
           <View style={styles.container2}>
             <Image
@@ -93,6 +107,12 @@ const Flipper = () => {
               resizeMode="cover"
               style={styles.backgroundImage2}
             />
+            <TouchableOpacity style={styles.btn}>
+              <Image
+                source={icons.heartOutline}
+                style={[styles.btnImg, { tintColor: "#AED6F1" }]}
+              />
+            </TouchableOpacity>
           </View>
         </TouchableOpacity>
       </View>

@@ -11,6 +11,9 @@ import chevronRight from "../assets/icons/chevron-right.png";
 import dating from "../assets/icons/dating.png";
 import hearts from "../assets/icons/hearts.png";
 import ghost from "../assets/icons/ghost.png";
+import portfolio from "../assets/icons/portfolio.png";
+import school from "../assets/icons/school.png";
+import contract from "../assets/icons/contract.png";
 
 export default {
   heart,
@@ -26,4 +29,7 @@ export default {
   dating,
   hearts,
   ghost,
+  portfolio,
+  school,
+  contract,
 };

@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   container2: {
-    position: "relative", // Make the container a reference for positioning
+    position: "relative",
     width: "100%",
     height: 500,
     backgroundColor: COLORS.primary,
@@ -62,30 +62,29 @@ const styles = StyleSheet.create({
   },
   btn: {
     position: "absolute",
-    bottom: 0, // Adjust to place at the bottom
-    left: 0, // Adjust to place at the left
+    bottom: 0,
+    left: 0,
     paddingLeft: 15,
     paddingBottom: 5,
 
     zIndex: 1,
   },
   btnImg: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     marginTop: 5,
   },
   bgFade: {
-    // backgroundColor: "rgba(0, 0, 0, 0.2)", // Black with 50% opacity
     width: "100%",
-    paddingVertical: 10, // Adjust as needed
+    paddingVertical: 10,
     shadowColor: "#000000",
     shadowOffset: {
       width: 0,
-      height: -4, // Negative value to place the shadow above
+      height: -4,
     },
     shadowOpacity: 0.5,
     shadowRadius: 20,
-    elevation: 10, // For AndroidAndroid
+    elevation: 10, // For Android
     borderBottomLeftRadius: SIZES.medium,
     borderBottomRightRadius: SIZES.medium,
   },
@@ -97,14 +96,23 @@ const styles = StyleSheet.create({
   smallIcon: {
     width: 20,
     height: 20,
-    marginTop: 5,
+
+    color: COLORS.white,
+    tintColor: COLORS.white,
   },
   iconInfoContainer: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-start",
     paddingLeft: 15,
-    paddingBottom: 5,
+    paddingBottom: 10,
+  },
+  pusher: {
+    paddingLeft: 26,
+    objectFit: "contain",
+  },
+  pusher2: {
+    paddingLeft: 9.5,
   },
 });
 
