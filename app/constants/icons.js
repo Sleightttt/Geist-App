@@ -14,6 +14,7 @@ import ghost from "../assets/icons/ghost.png";
 import portfolio from "../assets/icons/portfolio.png";
 import school from "../assets/icons/school.png";
 import contract from "../assets/icons/contract.png";
+import checked from "../assets/icons/checked.png";
 
 export default {
   heart,
@@ -32,4 +33,5 @@ export default {
   portfolio,
   school,
   contract,
+  checked,
 };

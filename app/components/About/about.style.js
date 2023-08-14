@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
   },
   aboutText: {
     marginTop: 10,
+    color: COLORS.secondary,
   },
   promptBox: {
     height: 50,
