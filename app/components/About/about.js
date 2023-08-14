@@ -4,7 +4,11 @@ import styles from "./about.style";
 const About = () => {
   return (
     <View style={styles.container}>
-      <Text>Abouttttt</Text>
+      <View style={styles.interestCont}>
+        <Text>Abouttttt</Text>
+        <Text>Abouttttt</Text>
+        <Text>Abouttttt</Text>
+      </View>
     </View>
   );
 };

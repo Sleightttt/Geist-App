@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     height: 500,
     backgroundColor: COLORS.primary,
 
-    justifyContent: "flex-end",
     alignItems: "flex-start",
   },
   container2: {
@@ -22,6 +21,11 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     marginTop: 3,
   },
+  interestCont: {
+    display: "flex",
+    flexDirection: "row",
+  },
+  interestBubble: {},
 });
 
 export default styles;
