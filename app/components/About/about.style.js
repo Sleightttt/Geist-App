@@ -1,31 +1,50 @@
 import { StyleSheet } from "react-native";
-
-import { COLORS, FONT, SIZES } from "./../../constants";
+import { COLORS } from "./../../constants";
 
 const styles = StyleSheet.create({
   container: {
-    position: "relative", // Make the container a reference for positioning
-    width: "100%",
-    height: 500,
-    backgroundColor: COLORS.primary,
-
-    alignItems: "flex-start",
-  },
-  container2: {
+    flex: 1,
+    flexDirection: "column",
     position: "relative",
     width: "100%",
-    height: 500,
+    height: "100%",
     backgroundColor: COLORS.primary,
-
-    justifyContent: "flex-end",
-    alignItems: "flex-start",
-    marginTop: 3,
   },
-  interestCont: {
+  aboutContainer: {
     display: "flex",
-    flexDirection: "row",
+    padding: 15,
   },
-  interestBubble: {},
+  aboutHeaderText: {
+    color: COLORS.secondary,
+    fontSize: 20,
+  },
+  interestsContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap", // Allow items to wrap to the next line
+    width: "100%", // Set the width to maximum desired width
+  },
+  interestBubble: {
+    padding: 5,
+    margin: 5,
+    color: COLORS.white,
+    borderColor: COLORS.secondary,
+    borderWidth: 1,
+    borderRadius: 15,
+    backgroundColor: COLORS.secondary,
+  },
+  aboutText: {
+    marginTop: 10,
+  },
+  promptBox: {
+    height: 50,
+    backgroundColor: COLORS.secondary,
+    margin: 10,
+    borderRadius: 12,
+  },
+  promptText: {
+    margin: 5,
+    color: COLORS.white,
+  },
 });
 
 export default styles;
