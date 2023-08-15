@@ -1,14 +1,23 @@
 // Nav.js
 import React, { useState } from "react";
+import { useRouter } from "expo-router";
 import { Text, View, TouchableOpacity, Image } from "react-native";
 import styles from "./nav.style";
 import { icons, COLORS } from "../../constants";
+import { useNavigation } from "@react-navigation/native";
 
 const Nav = () => {
+  const router = useRouter();
+  const navigation = useNavigation();
   const [activeTab, setActiveTab] = useState(1); // Default active tab is the middle one
 
   const handleTabPress = (tabIndex) => {
     setActiveTab(tabIndex);
+  };
+
+  const handleHeartsIconClick = () => {
+    console.log("should go to /matches");
+    router.push("/Matches"); // Navigate to the "Matches" screen
   };
 
   return (
@@ -21,7 +30,10 @@ const Nav = () => {
             tintColor: COLORS.primary,
           },
         ]}
-        onPress={() => handleTabPress(0)}
+        onPress={() => {
+          handleTabPress(0);
+          handleHeartsIconClick();
+        }}
       >
         <Image
           style={[
