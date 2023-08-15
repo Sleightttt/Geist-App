@@ -10,6 +10,11 @@ const styles = StyleSheet.create({
     justifyContent: "center", // Center the buttons horizontally
     alignItems: "center", // Center the buttons vertically
     paddingVertical: SIZES.small,
+    borderTopColor: COLORS.gray,
+    borderTopWidth: 0.5,
+    shadowColor: COLORS.black,
+    shadowOffset: { width: 0, height: -1 },
+    shadowOpacity: 0.2,
   },
   navButton: {
     flex: 1, // Distribute the available space equally among buttons
