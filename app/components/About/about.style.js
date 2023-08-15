@@ -21,20 +21,23 @@ const styles = StyleSheet.create({
   interestsContainer: {
     flexDirection: "row",
     flexWrap: "wrap", // Allow items to wrap to the next line
-    width: "100%", // Set the width to maximum desired width
+    // width: "100%", // Set the width to maximum desired width
   },
   interestBubble: {
     padding: 5,
     margin: 5,
     color: COLORS.white,
+
+    backgroundColor: COLORS.secondary,
     borderColor: COLORS.secondary,
     borderWidth: 1,
     borderRadius: 15,
-    backgroundColor: COLORS.secondary,
   },
   aboutText: {
     marginTop: 10,
     color: COLORS.secondary,
+    fontWeight: "bold",
+    fontSize: 18,
   },
   promptBox: {
     height: 50,

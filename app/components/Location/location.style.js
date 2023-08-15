@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
     tintColor: COLORS.secondary,
   },
   smallIcon2: {
-    width: 38,
-    height: 38,
+    width: 30,
+    height: 30,
     margin: 10,
     tintColor: COLORS.secondary,
   },

@@ -28,13 +28,13 @@ const Location = () => {
       </View>
       <View style={styles.iconsContainer}>
         <View style={styles.iconBox1}>
-          <Image style={styles.smallIcon} source={icons.checked} />
+          <Image style={styles.smallIcon2} source={icons.close} />
         </View>
         <View style={styles.iconBox2}>
           <Image style={styles.smallIcon} source={icons.superLike} />
         </View>
         <View style={styles.iconBox1}>
-          <Image style={styles.smallIcon2} source={icons.close} />
+          <Image style={styles.smallIcon} source={icons.checked} />
         </View>
       </View>
     </View>

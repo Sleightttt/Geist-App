@@ -10,7 +10,13 @@ const jobTypes = [
   "Time With Friends",
 ];
 
-const lookingFor = ["Monogomy", "Marraige", "Polyamory", "ENM", "Fling"];
+const lookingFor = [
+  "Monogomy",
+  "Marraige",
+  "Kids",
+  "Long-term",
+  "Relationship",
+];
 
 const About = () => {
   return (
