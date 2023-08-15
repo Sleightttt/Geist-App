@@ -1,26 +1,12 @@
-import {
-  View,
-  SafeAreaView,
-  ScrollView,
-  Image,
-  Text,
-  ImageBackground,
-} from "react-native";
-import { Stack, useRouter, useRoute } from "expo-router";
-import ScreenHeaderBtn from "./components/ScreenHeaderBtn/screenheaderbtn";
-import { COLORS, FONT, SIZES, SHADOWS, icons, images } from "./constants";
-import Welcome from "./components/Welcome/welcome";
-import Flipper from "./components/Flipper/flipper";
-import Nav from "./components/Nav/nav";
-import { useState } from "react";
-import LinearGradient from "expo-linear-gradient";
-import Matches from "./components/Matches/matches";
+import react from "react";
+import { View, Text, SafeAreaView, Image, ImageBackground } from "react-native";
+import { Stack } from "expo-router";
+import { ScrollView } from "react-native-gesture-handler";
+import { COLORS, SIZES, icons, images } from "../constants";
+import ScreenHeaderBtn from "../components/ScreenHeaderBtn/screenheaderbtn";
+import Nav from "../components/Nav/nav";
 
-const Home = () => {
-  const router = useRouter();
-  const [searchTerm, setSearchTerm] = useState("");
-  // const route = useRoute();
-
+const Profile = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -81,20 +67,12 @@ const Home = () => {
               ),
             }}
           />
-
-          <Welcome
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-            handleClick={() => {
-              router.push(`/search/${searchTerm}`);
-            }}
-          />
-          <Flipper />
         </View>
+        <Text>Profile</Text>
       </ScrollView>
-      <Nav activeNum={1} />
+      <Nav activeNum={2} />
     </SafeAreaView>
   );
 };
 
-export default Home;
+export default Profile;

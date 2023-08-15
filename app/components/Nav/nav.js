@@ -6,19 +6,27 @@ import styles from "./nav.style";
 import { icons, COLORS } from "../../constants";
 import { useNavigation } from "@react-navigation/native";
 
-const Nav = () => {
+const Nav = ({ activeNum }) => {
   const router = useRouter();
   const navigation = useNavigation();
-  const [activeTab, setActiveTab] = useState(1); // Default active tab is the middle one
+  const [activeTab, setActiveTab] = useState(activeNum); // Default active tab is the middle one
 
-  const handleTabPress = (tabIndex) => {
-    setActiveTab(tabIndex);
-  };
+  // const handleTabPress = (tabIndex) => {
+  //   setActiveTab(tabIndex);
+  // };
 
   const handleHeartsIconClick = () => {
-    console.log("should go to /matches");
-    router.push("/Matches"); // Navigate to the "Matches" screen
+    router.push("/Matches/Matches");
   };
+
+  const handleGhostIconClick = () => {
+    setActiveTab(1);
+    router.push("/");
+  };
+  const handleProfileIconClick = () => {
+    router.push("/Profile/Profile");
+  };
+  console.log(activeNum);
 
   return (
     <View style={styles.container}>
@@ -31,7 +39,6 @@ const Nav = () => {
           },
         ]}
         onPress={() => {
-          handleTabPress(0);
           handleHeartsIconClick();
         }}
       >
@@ -54,7 +61,9 @@ const Nav = () => {
             tintColor: COLORS.primary,
           },
         ]}
-        onPress={() => handleTabPress(1)}
+        onPress={() => {
+          handleGhostIconClick();
+        }}
       >
         <Image
           style={[
@@ -72,7 +81,9 @@ const Nav = () => {
           styles.navButton,
           activeTab === 2 && { backgroundColor: COLORS.secondary },
         ]}
-        onPress={() => handleTabPress(2)}
+        onPress={() => {
+          handleProfileIconClick();
+        }}
       >
         <Image
           style={[
