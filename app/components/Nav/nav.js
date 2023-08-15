@@ -19,6 +19,7 @@ const Nav = () => {
           style={[styles.iconImg, { tintColor: "#52528C" }]}
           resizeMode="contain"
           source={icons.ghost}
+          onPress={() => router.push("/swipe")}
         />
       </TouchableOpacity>
       <TouchableOpacity style={styles.navButton}>

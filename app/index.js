@@ -1,5 +1,5 @@
 import { View, SafeAreaView, ScrollView } from "react-native";
-import { Stack, useRouter } from "expo-router";
+import { Stack, useRouter, useRoute } from "expo-router";
 import ScreenHeaderBtn from "./components/ScreenHeaderBtn/screenheaderbtn";
 import { COLORS, FONT, SIZES, SHADOWS, icons, images } from "./constants";
 import Welcome from "./components/Welcome/welcome";
@@ -11,6 +11,9 @@ import LinearGradient from "expo-linear-gradient";
 const Home = () => {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
+  // const route = useRoute();
+
+  console.log("Current route name:", router);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
