@@ -48,8 +48,21 @@ const styles = StyleSheet.create({
     color: COLORS.white,
   },
   smallIcon: {
+    width: 40,
+    height: 40,
+    margin: 10,
+    tintColor: COLORS.secondary,
+  },
+  smallIcon1: {
     width: 20,
     height: 20,
+    // margin: 10,
+    tintColor: COLORS.secondary,
+  },
+  smallIcon2: {
+    width: 38,
+    height: 38,
+    margin: 10,
     tintColor: COLORS.secondary,
   },
   iconsContainer: {
@@ -62,7 +75,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: "100%",
     width: "33%",
-    backgroundColor: COLORS.tertiary,
   },
   iconBox2: {
     flex: 1,
@@ -70,7 +82,6 @@ const styles = StyleSheet.create({
     // justifyContent: "center",
     height: "100%",
     width: "33%",
-    backgroundColor: COLORS.tertiary,
   },
 });
 

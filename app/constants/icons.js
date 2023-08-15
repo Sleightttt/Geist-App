@@ -16,6 +16,9 @@ import school from "../assets/icons/school.png";
 import contract from "../assets/icons/contract.png";
 import checked from "../assets/icons/checked.png";
 
+import superLike from "../assets/icons/superLike.png";
+import close from "../assets/icons/close.png";
+
 export default {
   heart,
   menu,
@@ -34,4 +37,6 @@ export default {
   school,
   contract,
   checked,
+  superLike,
+  close,
 };

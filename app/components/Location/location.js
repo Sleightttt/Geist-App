@@ -19,7 +19,7 @@ const Location = () => {
       <View style={styles.aboutContainer}>
         <Text style={styles.aboutHeaderText}>
           {" "}
-          <Image source={icons.location} style={styles.smallIcon} />
+          <Image source={icons.location} style={styles.smallIcon1} />
           Brennan's Location
         </Text>
         <Text style={{ paddingLeft: 10, color: COLORS.secondary }}>
@@ -28,13 +28,13 @@ const Location = () => {
       </View>
       <View style={styles.iconsContainer}>
         <View style={styles.iconBox1}>
-          <Text>Yes</Text>
+          <Image style={styles.smallIcon} source={icons.checked} />
         </View>
         <View style={styles.iconBox2}>
-          <Text>Super Yes</Text>
+          <Image style={styles.smallIcon} source={icons.superLike} />
         </View>
         <View style={styles.iconBox1}>
-          <Text>No</Text>
+          <Image style={styles.smallIcon2} source={icons.close} />
         </View>
       </View>
     </View>

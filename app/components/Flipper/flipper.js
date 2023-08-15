@@ -6,6 +6,7 @@ import styles from "./flipper.style";
 import { PanGestureHandler, State } from "react-native-gesture-handler";
 import About from "../About/about";
 import Location from "../Location/location";
+import Report from "../Report/report";
 
 const Flipper = () => {
   //attempt 1 at scroll feature
@@ -120,6 +121,7 @@ const Flipper = () => {
           </View>
         </TouchableOpacity>
         <Location />
+        <Report />
       </View>
     </PanGestureHandler>
   );
