@@ -2,16 +2,7 @@ import React from "react";
 import { Text, View, Image } from "react-native";
 import { icons, COLORS } from "../../constants";
 import styles from "./location.style";
-
-const jobTypes = [
-  "Hiking",
-  "Camping",
-  "Video Games",
-  "Coding",
-  "Time With Friends",
-];
-
-const lookingFor = ["Monogomy", "Marraige", "Polyamory", "ENM", "Fling"];
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Location = () => {
   return (
@@ -28,13 +19,20 @@ const Location = () => {
       </View>
       <View style={styles.iconsContainer}>
         <View style={styles.iconBox1}>
-          <Image style={styles.smallIcon2} source={icons.close} />
+          <TouchableOpacity>
+            <Image style={styles.smallIcon2} source={icons.close} />
+          </TouchableOpacity>
         </View>
         <View style={styles.iconBox2}>
-          <Image style={styles.smallIcon} source={icons.superLike} />
+          <TouchableOpacity>
+            <Image style={styles.smallIcon} source={icons.superLike} />
+          </TouchableOpacity>
         </View>
+
         <View style={styles.iconBox1}>
-          <Image style={styles.smallIcon} source={icons.checked} />
+          <TouchableOpacity>
+            <Image style={styles.smallIcon} source={icons.checked} />
+          </TouchableOpacity>
         </View>
       </View>
     </View>

@@ -18,6 +18,9 @@ import checked from "../assets/icons/checked.png";
 
 import superLike from "../assets/icons/superLike.png";
 import close from "../assets/icons/close.png";
+import hearthands from "../assets/icons/hearthands.png";
+import ghostright from "../assets/icons/ghostright.png";
+import ghostleft from "../assets/icons/ghostleft.png";
 
 export default {
   heart,
@@ -39,4 +42,7 @@ export default {
   checked,
   superLike,
   close,
+  hearthands,
+  ghostright,
+  ghostleft,
 };

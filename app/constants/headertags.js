@@ -10,6 +10,16 @@ const headerTags = [
   "Matching souls, one swipe closer.",
   "Bringing love and technology together.",
   "Swipe, match, and let the magic begin.",
+  "Ghosting the singles scene? Swipe to haunt their heart!",
+  "Spiriting away your loneliness, one swipe at a time.",
+  "Searching for an otherworldly connection? Swipe away!",
+  "Join our spectral singles in the afterlove!",
+  "Eternally searching for love? Swipe right!",
+  "Unmask your ghostly allure with every swipe.",
+  "A haunted romance awaits – start swiping!",
+  "Are you ready for some paranormal match-making?",
+  "Let your heart be the compass on this ghostly journey.",
+  "Matching phantoms and hearts since forever.",
 ];
 
 const headerGreetings = [

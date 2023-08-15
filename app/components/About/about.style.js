@@ -27,11 +27,14 @@ const styles = StyleSheet.create({
     padding: 5,
     margin: 5,
     color: COLORS.white,
-
     backgroundColor: COLORS.secondary,
     borderColor: COLORS.secondary,
     borderWidth: 1,
     borderRadius: 15,
+    fontWeight: "bold",
+    shadowColor: COLORS.black,
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.5,
   },
   aboutText: {
     marginTop: 10,
@@ -48,6 +51,7 @@ const styles = StyleSheet.create({
   promptText: {
     margin: 5,
     color: COLORS.white,
+    fontWeight: "bold",
   },
 });
 
