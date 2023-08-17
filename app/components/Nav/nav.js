@@ -9,12 +9,7 @@ import { useNavigation } from "@react-navigation/native";
 const Nav = ({ activeNum }) => {
   const router = useRouter();
   const navigation = useNavigation();
-  const [activeTab, setActiveTab] = useState(activeNum); // Default active tab is the middle one
-
-  // const handleTabPress = (tabIndex) => {
-  //   setActiveTab(tabIndex);
-  // };
-
+  const [activeTab, setActiveTab] = useState(activeNum);
   const handleHeartsIconClick = () => {
     router.push("/Matches/Matches");
   };
@@ -26,7 +21,6 @@ const Nav = ({ activeNum }) => {
   const handleProfileIconClick = () => {
     router.push("/Profile/Profile");
   };
-  console.log(activeNum);
 
   return (
     <View style={styles.container}>

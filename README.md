@@ -12,4 +12,9 @@ npx create-expo-app -e with-router
 
 - [Expo Router: Docs](https://expo.github.io/router)
 - [Expo Router: Repo](https://github.com/expo/router)
+
 # Geist-App
+
+## PROJECT
+
+Geist is a brand new dating app designed to drive conversations. Currently under development. Next steps are: Profile page UI -> Conversations page UI -> MongoDB implementation
