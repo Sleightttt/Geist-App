@@ -12,7 +12,7 @@ import {
   createStackNavigator,
   TransitionPresets,
 } from "@react-navigation/stack";
-import { Stack } from "expo-router";
+import { Stack, useRouter, useSearchParams } from "expo-router";
 import { ScrollView } from "react-native-gesture-handler";
 import { COLORS, SIZES, icons, images } from "../constants";
 import ScreenHeaderBtn from "../components/ScreenHeaderBtn/screenheaderbtn";
@@ -90,6 +90,7 @@ let chats = [
 ];
 
 const Matches = () => {
+  const router = useRouter();
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <ScrollView
@@ -139,7 +140,7 @@ const Matches = () => {
                 shadowRadius: 3.84,
               }}
               onPress={() => {
-                router.push(`/search/${item.name}`);
+                router.push(`/MatchConvo/${item.name}`);
               }}
             >
               <Image
@@ -159,7 +160,7 @@ const Matches = () => {
           renderItem={(item) => (
             <TouchableOpacity
               onPress={() => {
-                router.push(`/search/${item.name}`);
+                router.push(`/MatchConvo/${item.name}`);
               }}
             >
               <View style={styles.matchBox}>

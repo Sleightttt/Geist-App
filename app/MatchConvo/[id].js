@@ -15,10 +15,8 @@ const MatchConvo = () => {
           <Stack.Screen
             options={{
               headerStyle: { backgroundColor: COLORS.primary },
-
               headerTintColor: COLORS.secondary,
               headerShadowVisible: false,
-
               headerLeft: () => (
                 <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
               ),
@@ -29,7 +27,7 @@ const MatchConvo = () => {
             }}
           />
         </View>
-        <Text>Profile</Text>
+        <Text>This is your conversation with x</Text>
       </ScrollView>
       <Nav activeNum={2} />
     </SafeAreaView>
