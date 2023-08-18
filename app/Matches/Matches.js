@@ -10,6 +10,27 @@ import { COLORS, SIZES, icons, images } from "../constants";
 import ScreenHeaderBtn from "../components/ScreenHeaderBtn/screenheaderbtn";
 import Nav from "../components/Nav/nav";
 
+let matches = [
+  {
+    name: "Jennifer",
+    age: 31,
+    profilePic:
+      "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+  },
+  {
+    name: "Jenny",
+    age: 32,
+    profilePic:
+      "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+  },
+  {
+    name: "Jen",
+    age: 30,
+    profilePic:
+      "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+  },
+];
+
 const Matches = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
@@ -28,7 +49,7 @@ const Matches = () => {
               headerRight: () => (
                 <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
               ),
-              headerTitle: "",
+              headerTitle: "MATCHES",
             }}
           />
         </View>

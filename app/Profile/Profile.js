@@ -24,47 +24,7 @@ const Profile = () => {
               headerRight: () => (
                 <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
               ),
-              headerTitle: () => (
-                <>
-                  <Image
-                    source={icons.ghostright}
-                    style={{
-                      width: 30,
-                      height: 30,
-                      resizeMode: "contain",
-                    }}
-                  />
-                  <ImageBackground
-                    source={icons.heart}
-                    overlayColor={COLORS.secondary}
-                    imageStyle={{ tintColor: COLORS.secondary }}
-                    style={{
-                      width: 35,
-                      height: 35,
-                      resizeMode: "contain",
-                      tintColor: COLORS.secondary,
-                    }}
-                  >
-                    <Text
-                      style={{
-                        color: COLORS.white,
-                        textAlign: "center",
-                        marginTop: 8,
-                      }}
-                    >
-                      3
-                    </Text>
-                  </ImageBackground>
-                  <Image
-                    source={icons.ghostleft}
-                    style={{
-                      width: 30,
-                      height: 30,
-                      resizeMode: "contain",
-                    }}
-                  />
-                </>
-              ),
+              headerTitle: "PROFILE",
             }}
           />
         </View>
