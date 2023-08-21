@@ -19,7 +19,6 @@ import Matches from "./components/Matches/matches";
 const Home = () => {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
-  // const route = useRoute();
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
