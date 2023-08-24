@@ -12,13 +12,28 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.gray,
     borderRadius: 25,
     margin: 5,
-    // shadowColor: "#000",
-    // shadowOffset: {
-    //   width: 0,
-    //   height: 2,
-    //   shadowOpacity: 0.25,
-    //   shadowRadius: 3.84,
-    // },
+  },
+  sentBox: {
+    backgroundColor: COLORS.secondary,
+    padding: 5,
+    margin: 5,
+    borderRadius: 12,
+  },
+  sentBubble: {
+    backgroundColor: COLORS.primary,
+    padding: 5,
+    borderRadius: 12,
+  },
+  recievedBox: {
+    backgroundColor: COLORS.secondary,
+    padding: 5,
+    margin: 5,
+    borderRadius: 12,
+  },
+  recievedBubble: {
+    backgroundColor: COLORS.primary,
+    padding: 5,
+    borderRadius: 12,
   },
 });
 

@@ -1,9 +1,8 @@
-let convo = {
-  recieved: ["Hey", "How are you"],
-  sent: [
-    "Hello",
-    "like obviously im fine omg how dare you get all up in my bizz",
-  ],
-};
+let convo = [
+  {
+    sent: ["Hey", "How are you", "thanks!"],
+    recieved: ["HELLO", "I AM NOT  A Bot"],
+  },
+];
 
 export default convo;

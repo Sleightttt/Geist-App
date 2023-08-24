@@ -7,6 +7,19 @@ import ScreenHeaderBtn from "../components/ScreenHeaderBtn/screenheaderbtn";
 import Nav from "../components/Nav/nav";
 import styles from "../MatchConvo/matchconvo.style";
 
+// const ChatBubble = ({ message, isReceived }) => {
+//   return (
+//     <View
+//       style={[
+//         styles.chatBubble,
+//         isReceived ? styles.receivedBubble : styles.sentBubble,
+//       ]}
+//     >
+//       <Text style={styles.chatText}>{message}</Text>
+//     </View>
+//   );
+// };
+
 const MatchConvo = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
@@ -23,7 +36,7 @@ const MatchConvo = () => {
               headerRight: () => (
                 <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
               ),
-              headerTitle: "PROFILE",
+              headerTitle: "CHAT",
             }}
           />
           <View style={{ flex: 1, alignItems: "center" }}>
@@ -34,7 +47,28 @@ const MatchConvo = () => {
             />
           </View>
         </View>
-        <View></View>
+        <View style={{ width: "100%" }}>
+          {convo.map((item) => (
+            <>
+              <View style={styles.sentBox}>
+                <View style={styles.sentBubble}>
+                  <Text>{item.sent[0]}</Text>
+                </View>
+              </View>
+              <View style={styles.recievedBox}>
+                <View style={styles.recievedBubble}>
+                  <Text>{item.recieved[0]}</Text>
+                </View>
+              </View>
+              <View style={styles.sentBox}>
+                <Text>{item.sent[1]}</Text>
+              </View>
+              <View style={styles.recievedBox}>
+                <Text>{item.recieved[1]}</Text>
+              </View>
+            </>
+          ))}
+        </View>
       </ScrollView>
       <Nav activeNum={2} />
     </SafeAreaView>
