@@ -19,13 +19,13 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.gray,
     borderRadius: 25,
     margin: 5,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-      shadowOpacity: 0.25,
-      shadowRadius: 3.84,
-    },
+    // shadowColor: "#000",
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 2,
+    //   shadowOpacity: 0.25,
+    //   shadowRadius: 3.84,
+    // },
   },
   chatName: {
     padding: 5,
