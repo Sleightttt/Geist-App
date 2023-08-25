@@ -1,24 +1,18 @@
 import react from "react";
-import { View, Text, SafeAreaView, Image, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  Image,
+  ImageBackground,
+  TouchableOpacity,
+} from "react-native";
 import { Stack } from "expo-router";
 import { FlatList, ScrollView } from "react-native-gesture-handler";
 import { COLORS, SIZES, icons, images, convo } from "../constants";
 import ScreenHeaderBtn from "../components/ScreenHeaderBtn/screenheaderbtn";
 import Nav from "../components/Nav/nav";
 import styles from "../MatchConvo/matchconvo.style";
-
-// const ChatBubble = ({ message, isReceived }) => {
-//   return (
-//     <View
-//       style={[
-//         styles.chatBubble,
-//         isReceived ? styles.receivedBubble : styles.sentBubble,
-//       ]}
-//     >
-//       <Text style={styles.chatText}>{message}</Text>
-//     </View>
-//   );
-// };
 
 const MatchConvo = () => {
   return (
@@ -47,7 +41,7 @@ const MatchConvo = () => {
             />
           </View>
         </View>
-        <View style={{ width: "100%" }}>
+        <View>
           {convo.map((item) => (
             <>
               <View style={styles.sentBox}>
@@ -55,21 +49,27 @@ const MatchConvo = () => {
                   <Text>{item.sent[0]}</Text>
                 </View>
               </View>
-              <View style={styles.recievedBox}>
-                <View style={styles.recievedBubble}>
-                  <Text>{item.recieved[0]}</Text>
+              <View style={styles.receivedBox}>
+                <View style={styles.receivedBubble}>
+                  <Text>{item.received[0]}</Text>
                 </View>
               </View>
+
               <View style={styles.sentBox}>
-                <Text>{item.sent[1]}</Text>
+                <View style={styles.sentBubble}>
+                  <Text>{item.sent[1]}</Text>
+                </View>
               </View>
-              <View style={styles.recievedBox}>
-                <Text>{item.recieved[1]}</Text>
+              <View style={styles.receivedBox}>
+                <View style={styles.receivedBubble}>
+                  <Text>{item.received[1]}</Text>
+                </View>
               </View>
             </>
           ))}
         </View>
       </ScrollView>
+
       <Nav activeNum={2} />
     </SafeAreaView>
   );

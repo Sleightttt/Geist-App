@@ -22,9 +22,6 @@ const styles = StyleSheet.create({
     // paddingVertical: SIZES.small,
     // paddingHorizontal: SIZES.medium,
 
-    borderLeftWidth: 1,
-    borderRightWidth: 1,
-    borderColor: COLORS.white,
     justifyContent: "center",
     alignItems: "center",
     color: COLORS.white,

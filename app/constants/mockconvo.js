@@ -1,7 +1,14 @@
 let convo = [
   {
-    sent: ["Hey", "How are you", "thanks!"],
-    recieved: ["HELLO", "I AM NOT  A Bot"],
+    sent: [
+      "Heyyyyyyyyyyyyyyyyyybjgvghvghvghvhgvvvhvjhvghjvghjvjhgvjhvhjvhvhvhjvjhgvghjvhgvghvjhvhvhvg",
+      "How are you",
+      "thanks!",
+    ],
+    received: [
+      "HELLO",
+      "I AM NOT  A BOT PLEASE ENTER YOUR DOB AND MOTHERS MAIDEN NAME",
+    ],
   },
 ];
 

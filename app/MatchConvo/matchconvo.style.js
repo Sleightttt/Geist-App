@@ -7,33 +7,37 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   profilePic: {
-    height: 50,
-    width: 50,
+    height: 60,
+    width: 60,
     backgroundColor: COLORS.gray,
-    borderRadius: 25,
+    borderRadius: 30,
     margin: 5,
   },
   sentBox: {
-    backgroundColor: COLORS.secondary,
-    padding: 5,
-    margin: 5,
     borderRadius: 12,
+    width: "100%",
+    alignItems: "flex-start",
   },
   sentBubble: {
     backgroundColor: COLORS.primary,
     padding: 5,
     borderRadius: 12,
-  },
-  recievedBox: {
-    backgroundColor: COLORS.secondary,
-    padding: 5,
+    maxWidth: "60%",
     margin: 5,
-    borderRadius: 12,
+    padding: 5,
   },
-  recievedBubble: {
+  receivedBox: {
+    alignItems: "flex-end",
+    borderRadius: 12,
+    width: "100%",
+  },
+  receivedBubble: {
     backgroundColor: COLORS.primary,
     padding: 5,
     borderRadius: 12,
+    maxWidth: "60%",
+    margin: 5,
+    padding: 5,
   },
 });
 
