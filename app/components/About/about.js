@@ -25,9 +25,11 @@ const About = () => {
         <Text style={styles.aboutHeaderText}>Interests</Text>
         <View style={styles.interestsContainer}>
           {jobTypes.map((item, index) => (
-            <Text key={index} style={styles.interestBubble}>
-              {item}
-            </Text>
+            <>
+              <View key={index} style={styles.interestBubble}>
+                <Text style={styles.interestText}>{item}</Text>
+              </View>
+            </>
           ))}
         </View>
       </View>
@@ -44,9 +46,9 @@ const About = () => {
         <Text style={styles.aboutHeaderText}>Looking For</Text>
         <View style={styles.interestsContainer}>
           {lookingFor.map((item, index) => (
-            <Text key={index} style={styles.interestBubble}>
-              {item}
-            </Text>
+            <View key={index} style={styles.interestBubble}>
+              <Text style={styles.interestText}>{item}</Text>
+            </View>
           ))}
         </View>
       </View>

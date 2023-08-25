@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORS } from "./../../constants";
+import { COLORS, FONT } from "./../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -25,22 +25,30 @@ const styles = StyleSheet.create({
   },
   interestBubble: {
     padding: 5,
-    margin: 5,
+    marginTop: 5,
+    margin: 2,
     color: COLORS.white,
     backgroundColor: COLORS.secondary,
-    borderColor: COLORS.secondary,
-    borderWidth: 1,
-    borderRadius: 15,
+
     fontWeight: "bold",
     shadowColor: COLORS.black,
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.5,
+    shadowOffset: { width: 0, height: 0.5 },
+    shadowOpacity: 0.2,
+    fontFamily: FONT.regular,
+    borderRadius: 15,
+  },
+  interestText: {
+    color: COLORS.white,
+    fontWeight: "bold",
+    fontFamily: FONT.regular,
+    margin: 3,
   },
   aboutText: {
     marginTop: 10,
     color: COLORS.secondary,
     fontWeight: "bold",
     fontSize: 18,
+    fontFamily: FONT.regular,
   },
   promptBox: {
     height: 50,
@@ -52,6 +60,7 @@ const styles = StyleSheet.create({
     margin: 5,
     color: COLORS.white,
     fontWeight: "bold",
+    fontFamily: FONT.regular,
   },
 });
 
