@@ -13,7 +13,6 @@ import Welcome from "./components/Welcome/welcome";
 import Flipper from "./components/Flipper/flipper";
 import Nav from "./components/Nav/nav";
 import { useState } from "react";
-// import LinearGradient from "expo-linear-gradient";
 import Matches from "./components/Matches/matches";
 
 const Home = () => {

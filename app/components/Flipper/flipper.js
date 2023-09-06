@@ -19,6 +19,8 @@ const Flipper = () => {
       // Handle your logic for right and left swipes here
     }
   };
+
+  //////////end of swipe implemntation
   return (
     <PanGestureHandler onGestureEvent={onSwipeEvent}>
       <View>
