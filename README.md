@@ -18,3 +18,5 @@ npx create-expo-app -e with-router
 ## PROJECT
 
 Geist is a brand new dating app designed to drive conversations. Currently under development. Next steps are: Profile page UI -> Conversations page UI -> MongoDB implementation
+
+UI implementation is underway, profile,
