@@ -10,6 +10,7 @@ const Nav = ({ activeNum }) => {
   const router = useRouter();
   const navigation = useNavigation();
   const [activeTab, setActiveTab] = useState(activeNum);
+
   const handleHeartsIconClick = () => {
     router.push("/Matches/Matches");
   };
